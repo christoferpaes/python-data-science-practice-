@@ -399,8 +399,13 @@ For this problem, you are expected to reflect on the classifiers you built on th
 """
 
 #### OBSERVATIONS FROM TESTING ####
-      # Within the first three problems we had a tuple list of data given to build our models with, which was tenured or non tenured (0 or 1). Using KNN we can see where the majority of cases for tenured and non tenured are, and what feature vectors have the greatest affect on the prediction. ###
-      # The majority of the preditictions for the cases would be non tenured (117) vs 43 tenured cases or 26.875% of tenured cases   
-      # The majority of cases for tenured are related to the feature vector relating to the number of years, and the tenured amount is 10 years or greater with a salary from 70,000 to 80,000.
-      # While the majority of non tenured professors do have the greater incomes but their population remains at 73.125% and has higher income earners and nearly 50% more of the population is non tenured; however, obviously there are trade offs between being non tenured and a tenured professor. ###
+ """
+#### Observations from Testing ####
+
+Within the first three problems, we had a tuple list of data given to build our models with, which indicated whether individuals were tenured or non-tenured (0 or 1). Using KNN, we can observe the majority of cases for tenured and non-tenured individuals, as well as which feature vectors have the greatest effect on the prediction.
+
+The majority of predictions for the cases would be non-tenured (117) versus 43 tenured cases, accounting for 26.875% of tenured cases. The majority of cases for tenured individuals are related to the feature vector concerning the number of years, with tenured amounts of 10 years or greater and salaries ranging from $70,000 to $80,000.
+
+While the majority of non-tenured professors do have higher incomes, their population remains at 73.125%, and they have higher-income earners. Additionally, nearly 50% more of the population is non-tenured. However, there are obviously trade-offs between being non-tenured and a tenured professor.
+"""
 
