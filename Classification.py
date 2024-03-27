@@ -407,5 +407,32 @@ Within the first three problems, we had a tuple list of data given to build our 
 The majority of predictions for the cases would be non-tenured (117) versus 43 tenured cases, accounting for 26.875% of tenured cases. The majority of cases for tenured individuals are related to the feature vector concerning the number of years, with tenured amounts of 10 years or greater and salaries ranging from $70,000 to $80,000.
 
 While the majority of non-tenured professors do have higher incomes, their population remains at 73.125%, and they have higher-income earners. Additionally, nearly 50% more of the population is non-tenured. However, there are obviously trade-offs between being non-tenured and a tenured professor.
+OBSERVATIONS FROM TESTING
+Data and Classifiers
+
+The initial problems involved building classifiers using a tuple list of data scientists' tenure status (tenured: 1, non-tenured: 0) and salary. We employed K-Nearest Neighbors (KNN) to analyze the data, specifically focusing on:
+
+Tenure Distribution: KNN allows us to observe the majority class (likely non-tenured in this case) and identify feature vectors (like years of experience and salary) that significantly influence tenure predictions.
+Tenure Prediction: Based on the provided data, KNN might predict a majority of non-tenured cases (e.g., 117 vs. 43 tenured, representing 26.875% tenured).
+Observations on Tenure and Salary
+
+Tenured Professors: Tenure might be more likely for individuals with:
+10 years or more of experience.
+Salaries ranging from $70,000 to $80,000 (though this may not be the sole determining factor).
+Non-Tenured Professors: While some non-tenured professors might have higher salaries, they likely make up a larger portion of the population (e.g., 73.125%).
+Considerations and Trade-offs
+
+These observations suggest a potential correlation between tenure, experience, and salary. However, it's crucial to remember that these are just initial findings based on a limited dataset. Tenure decisions often involve a multifaceted evaluation encompassing not just years of service and salary but also research contributions, teaching effectiveness, and service to the university community.
+
+Therefore, it's important to acknowledge the trade-offs between tenured and non-tenured positions:
+
+Tenure: Offers job security and academic freedom but may come with greater research and service expectations.
+Non-Tenure: May provide more flexibility in teaching focus but lacks the job security of tenure.
+Future Exploration
+
+Further investigation with a more comprehensive dataset could provide deeper insights into the relationships between tenure, experience, salary, and other relevant factors. Additionally, exploring other classification algorithms (like Logistic Regression) might yield different perspectives on the data.
+
+By critically evaluating these findings and conducting more comprehensive analyses, we can gain a more nuanced understanding of tenure and its potential links to experience and salary in academia.
+
 """
 
