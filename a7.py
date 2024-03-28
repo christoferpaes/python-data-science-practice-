@@ -351,6 +351,18 @@ def demoCluster2(x):
     plt.scatter([87], [18.63157895], s = 800, marker = 'X')
 
 demoCluster2('shoppingdata.csv')
+""Analysis Methodology
+When approaching the clustering task, my initial strategy was to group points that appeared spatially close or exhibited converging patterns. Subsequently, I calculated the Euclidean and Manhattan distances between different pairs of points to explore their spatial relationships. The aim was to identify clusters based on proximity and establish a basis for comparison.
+
+Distance Metrics Comparison
+Upon analyzing the distances, I observed intriguing patterns between the Euclidean and Manhattan metrics. While their values differed, their relative patterns remained consistent across the dataset. For instance, when examining the points [-14,-5] and [11,-6], both metrics indicated similar trends, with the 16th point being the closest neighbor to [-14,-5]. This observation was further reinforced by the Euclidean distance of approximately 3.16 and Manhattan distance of 4.
+
+Introduction of K-Means Algorithm
+Recognizing the time-intensive nature of manual distance calculations, I opted to implement the K-means clustering algorithm for efficiency. The algorithm revealed cluster centers located at [-15.89, -10.33], [18.33, 19.83], and [-43.8, 5.4]. These centroids serve as potential meeting spots, strategically positioned to accommodate clustered groups. Leveraging the K-means algorithm not only expedites the clustering process but also provides robust cluster assignments, facilitating effective decision-making.
+
+Conclusion
+In comparing manual distance calculations with the K-means algorithm, the latter emerged as a preferred choice due to its computational efficiency and ability to generate reliable cluster assignments. By harnessing automated clustering techniques, we can streamline the analysis process and derive actionable insights with greater accuracy and speed.
+""
 
 """## Problem 6: Writeup
 How did you choose your k value in your final result?  And how do you evaluate your final result?
