@@ -351,7 +351,10 @@ def demoCluster2(x):
     plt.scatter([87], [18.63157895], s = 800, marker = 'X')
 
 demoCluster2('shoppingdata.csv')
-"""Analysis Methodology
+"""
+## Problem 6: Writeup
+How did you choose your k value in your final result?  And how do you evaluate your final result?
+Analysis Methodology
 When approaching the clustering task, my initial strategy was to group points that appeared spatially close or exhibited converging patterns. Subsequently, I calculated the Euclidean and Manhattan distances between different pairs of points to explore their spatial relationships. The aim was to identify clusters based on proximity and establish a basis for comparison.
 
 Distance Metrics Comparison
@@ -364,17 +367,4 @@ Conclusion
 In comparing manual distance calculations with the K-means algorithm, the latter emerged as a preferred choice due to its computational efficiency and ability to generate reliable cluster assignments. By harnessing automated clustering techniques, we can streamline the analysis process and derive actionable insights with greater accuracy and speed.
 """
 
-"""## Problem 6: Writeup
-How did you choose your k value in your final result?  And how do you evaluate your final result?
-.
-"""
-
-## For my K value I set it to 3; however, I did jump around to various values for k like 4 and 5 and
-## from a visual perspective I found various points improperly clustered.
-## For example I just found point closer to other clusters than the cluster that they were labeled as
-## Which to me was verification that it was not properly labeling or clustering the data properly
-
-"""# Turn-in
-
-Turn in your notebook including your Python code and answers to the questions to D2L Assignments folder <b>Assignment 7</b>. In addition to the notebook document, you need to provide a pdf that has execution output from each code cell in your notebook.
 """
