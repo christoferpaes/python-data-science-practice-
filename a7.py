@@ -256,26 +256,27 @@ Answer the following question to evaluate the two results (3-clusters vs. 2-clus
 
 * How do you compare the two results? Which one is better?  And why?
 
+Evaluate the two clustering results (3-clusters vs. 2-clusters) based on the following question:
+
+* How do you compare the two results? Which one is better? And why?
+
+### Analysis Approach
+
+Initially, I adopted a hierarchical perspective to group or cluster points based on their proximity or converging patterns. Subsequently, I computed the Euclidean and Manhattan distances between various pairs of points to explore spatial relationships. This approach provided insights into the relative positioning of points and formed the basis for further analysis.
+
+### Distance Metrics Comparison
+
+Upon examining the distances, I noticed intriguing patterns between the Euclidean and Manhattan metrics. While their absolute values differed, their relative trends remained consistent across the dataset. For instance, when considering points such as [-14,-5] and [11,-6], both metrics revealed similar patterns, with the 16th point emerging as the closest neighbor to [-14,-5]. This observation was corroborated by the Euclidean distance of approximately 3.16 and Manhattan distance of 4.
+
+### Introduction of K-Means Algorithm
+
+Recognizing the computational complexity of manual distance calculations, I implemented the K-means clustering algorithm for efficiency. This algorithm identified cluster centers positioned at [-15.89, -10.33], [18.33, 19.83], and [-43.8, 5.4], suggesting potential meeting spots for clustered groups. Leveraging the K-means algorithm not only expedited the clustering process but also provided robust cluster assignments, facilitating informed decision-making.
+
+### Conclusion
+
+Comparing the two clustering methodologies, I found the K-means algorithm to be preferable due to its computational efficiency and ability to generate reliable cluster assignments. By leveraging automated clustering techniques, we can streamline the analysis process and derive actionable insights with greater accuracy and speed.
 """
 
-## My first intuition when choosing how to group or cluster from a hierarchal perspective was to choose clusters that
-## were near each other or were converging. Further down I took their Euclidian distance using two different points
-## calculated their distances between all other points on the graph and out of curiousity I compared using a linear graph
-## And thats why you see the graph above here.
-#We can see that linearly theyre[manhattan and euclidean] identical in--
-# their pattern, not values and this is the calculation for points [-14,-5]
-# We see that on this graph the point closest is the 16th value in the list --
-## and that the 16th value in our list is the shortest distance
-#I have marked the point on the graph with a red dot.
-# meaning points [11,-6] is closest to [-14,-5]
-
-
-# The distance is  Euclidian [3.1622776601683795] Manhattan = 4
-## however this is a tedious process and to save time I implemented a Kmeans algorithm too as you can see
-## in the above grap where points [-15.88888889 ,-10.33333333],[ 18.33333333 ,19.83333333], [-43.8  ,5.4 ]]
-## therefore, the X 's' in the graph above can be the central meeting spot, hypothetically speaking it would be a meeting spot.
-
-## Comparing the two, I personally like using a K-means algorithm, it is much faster than updating a recalculating.
 
 """# Group Customers
 In the following three problems, you need to group customers based on their shopping features.   The data file (shoppingdata.csv) of this part of the assignment can be downloaded from D2L site with this assignment specification. You should explore the data in the file first before your approach the below problems. The dataset has five columns including Annual Income and Spending Score. In this assignment, you are quired to retrieve the last two of these five columns. You need to make use of the Annual Income (in thousands of dollars) and Spending Score (1-100) columns to build your data examples. The Spending Score column signifies how often a person spends money in a mall on a scale of 1 to 100 with 100 being the highest spender.
